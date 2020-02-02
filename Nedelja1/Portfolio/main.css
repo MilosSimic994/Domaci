@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    background: url('img/top-view-garage-floor-clipart-2.jpg') center no-repeat;
+    background-size: cover;
+    filter: grayscale(90%);
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    font-family: 'Courgette', cursive;
+    background-attachment: fixed;
+}
+header h1
+        {
+    color: rgb(255, 255, 255);
+    text-align: right;
+    margin: 3.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+    
+}
+header p {
+    color: white;
+    text-align: right;
+    margin: 3.5rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+nav {
+    position: sticky;
+    top: 5px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-bottom: 6rem;
+    position: sticky;
+    top: 0;
+}
+
+nav li a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+nav li a:hover,
+nav li a:active {
+    color: #706a6a;
+}
+ .portfolio {
+     display: flex;
+     justify-content: space-around;
+ }
+
+ .portfolio article {
+     display: flex;
+     flex-direction: column;
+     margin-top: 4rem;
+     align-items: center;
+ }
+ .portfolio article img {
+     width: 15rem;
+     height: 15rem;
+     border-radius: 20px;
+ }
+ .fake-img {
+     width: 15rem;
+     height: 15rem;
+     background-color: #706a6a;
+     border-radius: 20px;
+ }
+ article button {
+     margin: 1rem;
+     background-color: rgba(0, 0, 0, 0);
+     padding: 0.5rem 1.5rem;
+     border: 3px solid white;
+     color: white;
+     border-radius: 20px;
+     cursor: pointer;
+     text-transform: uppercase;
+ }
+ article button:hover {
+     padding: 0.5rem 3.5rem;
+     text-align: right;
+ }
+ article h4 {
+     text-align: center;
+     margin: 6.5rem auto;
+     color: white;
+ }
+ .personal {
+     text-align: right;
+     color: white;
+     padding: 6rem;
+ }
+ .personal h1 {
+     font-size: 3rem;
+     padding-bottom: 1rem;
+ }
+ footer {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    color: white;
+    margin-bottom: 2rem;
+ }
+ footer h1 {
+     text-transform: uppercase;
+ }
+ footer ul {
+     display: flex;
+     padding: 1rem;
+     list-style: none;
+ }
+ footer ul li {
+     padding: 1rem;
+     font-size: 1.2rem;
+ }
