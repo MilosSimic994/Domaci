@@ -1,20 +1,40 @@
+// import LaunchList from "./launch_list"
+// import Launch from "./launch"
+// import Launch from "./launch"
+
+// import LaunchList from "./launch_list"
+
+// import { getPastLaunches } from "../services/spacex_service"
+let app = document.querySelector('#app')
+app.style.color ='white'
+app.style.textAlign = 'center' 
+app.style.margin = '20px'
+const select = () => {
+    let select = document.createElement('select')
   
-let date = new Date;
+        for (let i = 2005; i < 2025; i++) {
+            const opt = document.createElement('option')
+            opt.value = i
+            opt.innerText = i
+            select.appendChild(opt)
+        }
 
-const selector = document.createElement('select');
-selector.className = 'select'
-// const op1 = document.createElement('option');
-// op1.value = 1;
-// op1.innerHTML=`filtrirajte letove po godini:`
-// selector.appendChild(op1);
-const optCreator = () => {
-    for (let i = 2006; i <= date.getFullYear(); i++) {
-        const option = document.createElement('option');
-        option.value=`${i}`
-        option.innerHTML = `${i}`
-        selector.appendChild(option);
-    }
-    return selector;
-};
 
-export default optCreator;
+        select.addEventListener('change',() => {
+            app.innerText = 'SERVER NIJE U FUNKCIJI, POKUSAJTE KASNIJE'
+            app.style.fontSize = '32px'
+           
+           
+        
+            // if(selekt.value == "sve"){
+            //     renderList(niz)
+            //     return        
+            // }
+            // let filt = niz.filter((el) => el.godina == selekt.value)
+            // renderList(filt)
+        })
+       return select
+    
+}
+
+export { select }

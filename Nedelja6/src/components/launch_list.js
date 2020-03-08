@@ -8,7 +8,7 @@ const LaunchList = () => {
     getPastLaunches().then(response => {
         // let data=response.data;
         let { data } = response;
-
+        
         // const launch=Launch()
         data.forEach(element => {
             div.appendChild(Launch(element));

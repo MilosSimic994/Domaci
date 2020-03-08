@@ -9,7 +9,7 @@ const Launch = (launch) => {
     const div = document.createElement('div');
     div.className = 'launch';
 
-    console.log(launch_year);
+    // console.log(launch_year);
 
     const inner_divs = []
     // Inner div 0 je za sliku
