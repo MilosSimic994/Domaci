@@ -1,0 +1,52 @@
+/*type------------------------------------------*/
+body{
+  padding:0;
+  margin:0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+#app {
+  background-color: rgb(68, 9, 128);
+  margin: 0;
+  padding: 3rem;
+
+}
+#app div{
+  color: aliceblue;
+  
+}
+#app div h1 {
+  font-size: 3rem;
+}
+
+.launch-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.misa {
+  margin-top: 3rem;
+  height: 16rem;
+  width: 16rem;
+  background-color: rgba(172, 168, 168,0.4);
+  border-radius: 20px;
+  color: rgb(255, 234, 5);
+
+}
+
+#rak{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background: url('/assets/images/space2.jpg') no-repeat ;
+  background-size: 100vw 100vh;
+
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.misa img {
+  width: 8rem;
+  height: 8rem;
+}
